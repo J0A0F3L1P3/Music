@@ -1,0 +1,58 @@
+/* Definindo as variáveis base para o estilo */
+:root {
+    /* Definindo a fonte utilizada para o texto */
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    /* Definindo a altura da linha de texto */
+    line-height: 1.5;
+    /* Definindo a espessura da fonte */
+    font-weight: 400;
+    /* Definindo o tamanho de fonte base */
+    font-size: 62.5%; /* equivale a 10 pixels */
+    /* Definindo as opções de esquemas de cores */
+    color-scheme: light dark;
+    /* Definindo a cor de texto padrão */
+    color: white;
+    /* Definindo a cor de fundo padrão */
+    background-color: #3A3A3A;
+    /* Desativando a síntese de fonte */
+    font-synthesis: none;
+    /* Ativando opções de suavização de fonte para melhorar a legibilidade */
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Definindo estilos básicos para todas as tags HTML */
+* {
+    /* Zerando as margens, preenchimento, bordas e marcadores */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    list-style: none;
+    /* Definindo animações para as mudanças de estilo */
+    transition: background .5s linear,
+        background-color .5s linear,
+        background-image .5s linear,
+        color .1s linear,
+        outline .5s linear,
+        filter .2s linear,
+        opacity .2s linear,
+        box-shadow .2s linear;
+}
+
+/* Define o estilo do ponteiro do cursor do mouse quando se posicionado sobre elementos desativados */
+*:disabled:hover {
+    cursor: not-allowed;
+}
+
+/* Define um conjunto de regras de estilo a ser aplicado em telas com preferência de esquema de cores de luz */
+@media (prefers-color-scheme: light) {
+    /* Atualizando as variáveis base para esquemas de cores de luz */
+    :root {
+        /* Definindo a cor de texto padrão para um azul escuro */
+        color: #213547;
+        /* Definindo a cor de fundo padrão para um branco translúcido */
+        background-color: #ffffffde;
+    }
+}
